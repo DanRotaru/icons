@@ -19,9 +19,6 @@ Fastest way to get svg icons, just icons, nothing else!
 - - Data svg (encoded)
 - - SVG (encoded)
 
-### Get latest icons from materialdesignicons
-By default all icons are loaded from ``icons.json``, but you can get all icons directly from materialdesignicons, just add GET parameter ``?live=1``: [https://danrotaru.github.io/icons/?live=1](https://danrotaru.github.io/icons/?live=1)
-
 
 ### Free to use
 Using [materialdesignicons](https://materialdesignicons.com/) API
