@@ -1,1 +1,143 @@
-<!DOCTYPE html><html lang="en"><head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Material Icons</title> <style>@import url(https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap);[tooltip]{position:relative}[tooltip]::after,[tooltip]::before{text-transform:none;font-size:.9em;line-height:1;user-select:none;pointer-events:none;position:absolute;display:none;opacity:0}[tooltip]::before{content:'';border:5px solid transparent;z-index:1001}[tooltip]::after{content:attr(tooltip);font-size:13px;font-family:Helvetica,sans-serif;text-align:center;min-width:3em;max-width:21em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:1ch 1.5ch;border-radius:.3ch;box-shadow:0 1em 2em -.5em rgba(0,0,0,.35);background:#333;color:#fff;z-index:1000}[tooltip]:hover::after,[tooltip]:hover::before{display:block}[tooltip='']::after,[tooltip='']::before{display:none!important}[tooltip]:not([flow])::before,[tooltip][flow^=up]::before{bottom:100%;border-bottom-width:0;border-top-color:#333}[tooltip]:not([flow])::after,[tooltip][flow^=up]::after{bottom:calc(100% + 5px)}[tooltip]:not([flow])::after,[tooltip]:not([flow])::before,[tooltip][flow^=up]::after,[tooltip][flow^=up]::before{left:50%;transform:translate(-50%,-.5em)}[tooltip][flow^=down]::before{top:100%;border-top-width:0;border-bottom-color:#333}[tooltip][flow^=down]::after{top:calc(100% + 5px)}[tooltip][flow^=down]::after,[tooltip][flow^=down]::before{left:50%;transform:translate(-50%,.5em)}[tooltip][flow^=left]::before{top:50%;border-right-width:0;border-left-color:#333;left:calc(0em - 5px);transform:translate(-.5em,-50%)}[tooltip][flow^=left]::after{top:50%;right:calc(100% + 5px);transform:translate(-.5em,-50%)}[tooltip][flow^=right]::before{top:50%;border-left-width:0;border-right-color:#333;right:calc(0em - 5px);transform:translate(.5em,-50%)}[tooltip][flow^=right]::after{top:50%;left:calc(100% + 5px);transform:translate(.5em,-50%)}@keyframes tooltips-vert{to{opacity:1;transform:translate(-50%,0)}}@keyframes tooltips-horz{to{opacity:1;transform:translate(0,-50%)}}[tooltip]:not([flow]):hover::after,[tooltip]:not([flow]):hover::before,[tooltip][flow^=down]:hover::after,[tooltip][flow^=down]:hover::before,[tooltip][flow^=up]:hover::after,[tooltip][flow^=up]:hover::before{animation:tooltips-vert .2s ease-out forwards}[tooltip][flow^=left]:hover::after,[tooltip][flow^=left]:hover::before,[tooltip][flow^=right]:hover::after,[tooltip][flow^=right]:hover::before{animation:tooltips-horz .3s ease-out forwards}body{background:#f5f7f9;font:17px "Roboto Slab",sans-serif;margin:0}#icons{position:relative}#icons svg{width:24px;height:24px;padding:10px;border:1px solid #888;border-radius:5px;cursor:pointer;transition:.2s ease;opacity:.6}#icons div.active svg,#icons svg:hover{opacity:1;background:#313235}.h1{text-align:center;font-size:30px}.head{position:sticky;top:0;z-index:4444444;background:#202124;padding:20px 0;width:100%;height:30px}.git{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z'%3E%3C/path%3E%3C/svg%3E");position:fixed;right:10px;top:25px;width:30px;height:30px;background-size:100%;cursor:pointer;opacity:.6;transition:.2s ease}.git:hover{opacity:1}.head.active .git{top:initial;bottom:10px}.head input{position:fixed;right:-310px;width:300px;top:13px;transition:.2s ease}.head.active{box-shadow:0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23)}.head.active .h1{font-size:25px;position:absolute;left:55px}.head.active input{display:block;transform:translate(-320px)}.h1 svg{filter:invert(1)}.row{margin:50px;display:inline-flex}.left{width:300px}.right{width:calc(100% - 320px);text-align:center;padding-left:20px}#icons div{display:inline-block;margin:5px}input,select{background:rgba(51,51,51,.75);color:#fff;border:none;padding:10px 15px;border-radius:5px;width:100%;font:17px "Roboto Slab",sans-serif;box-sizing:border-box}input:focus,select:focus{box-shadow:0 0 0 2px #2196f3;outline:0}.color{background:rgba(51,51,51,.75);border-radius:5px;display:inline-flex}.color input[type=text]{background:0 0;padding:0;display:inline-block;width:calc(100% - 100px);box-shadow:none;text-transform:uppercase}input[type=color]{-webkit-appearance:none;border:none;height:40px;width:100px;background:0 0;vertical-align:middle;cursor:pointer}input[type=color]::-webkit-color-swatch-wrapper{padding:0}input[type=color]::-webkit-color-swatch{border:none}#preloader{background-image:url("data:image/svg+xml,%3Csvg version='1' xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cstyle%3E@keyframes rotate%7B0%25%7Btransform:rotate(0deg)%7Dto%7Btransform:rotate(360deg)%7D%7D@keyframes fillunfill%7B0%25%7Bstroke-dashoffset:32.3%7D50%25%7Bstroke-dashoffset:0%7Dto%7Bstroke-dashoffset:-31.9%7D%7D@keyframes rot%7B0%25%7Btransform:rotate(0deg)%7Dto%7Btransform:rotate(-360deg)%7D%7D@keyframes colors%7B0%25,to%7Bstroke:%234285f4%7D%7D%3C/style%3E%3Cg style='animation-duration:1568.63ms;animation-iteration-count:infinite;animation-name:rotate;animation-timing-function:linear;transform-origin:50%25 50%25;width:16px;height:16px'%3E%3Cpath fill='none' d='M8 1.125A6.875 6.875 0 1 1 1.125 8' stroke-width='1.5' stroke-linecap='round' style='animation-duration:1333ms,5332ms,5332ms;animation-fill-mode:forwards;animation-iteration-count:infinite,infinite,infinite;animation-name:fillunfill,rot,colors;animation-play-state:running,running,running;animation-timing-function:cubic-bezier(.4,0,.2,1),steps(4),linear;transform-origin:50%25 50%25' stroke-dasharray='32.4' stroke-dashoffset='32.4'/%3E%3C/g%3E%3C/svg%3E");position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:50px;height:50px;background-size:100%}.seperator{display:flex;padding:.75rem 0;justify-items:center;align-items:center;cursor:default}.seperator span{padding:.25rem .5rem;color:rgba(171,171,171,.9);border-radius:.5rem;flex:1;white-space:nowrap;text-align:center}.seperator::before{content:' ';border-top:1px solid rgba(171,171,171,.75);height:0;flex:1;margin-bottom:-1px}.seperator::after{content:' ';border-top:1px solid rgba(171,171,171,.75);height:0;flex:1;margin-bottom:-1px}.search-title{box-shadow:4px 13px 30px 1px rgba(0,0,0,.1);background:#fff;padding:10px;border-radius:5px;margin-top:5px;text-align:center;color:#000}.current{display:none;position:sticky;top:0;padding-top:20px;overflow:auto;height:calc(100vh - 30px)}.current::-webkit-scrollbar{width:0}.op{font-size:13px;opacity:.5;margin:10px}#icon svg{width:30px;height:30px;vertical-align:top;margin-right:5px}.input[data-id=svg-icon]{white-space:pre-wrap}.download{position:relative;margin-top:10px;display:inline-flex;width:100%}.download:before{content:'';background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z'%3E%3C/path%3E%3C/svg%3E");width:18px;height:18px;background-size:100%;position:absolute;left:5px;top:6px}.download:after{content:'Download: ';font-size:13px;position:absolute;left:30px;top:6px}.download select{padding:5px 10px;padding-left:100px;font-size:13px;background:#2e2e2f;box-shadow:none}.download div{margin-left:5px;font-size:14px;background:#333;padding:5px 10px;border-radius:5px;cursor:pointer;opacity:.7;transition:.2s ease}.download div:hover{opacity:1}.input{background:rgba(51,51,51,.75);color:#fff;padding:10px;border-radius:5px;font:15px monaco,Consolas,Menlo,Courier,monospace;user-select:all;overflow:hidden;white-space:nowrap}.input qteg{color:#f92672}.input qattr{color:#a6e22e}.input qclr,.input qstr{color:#e6db74}.input qdiv{color:#fff;position:relative;top:5px;font-size:13px;font-family:Gilroy;font-weight:700;opacity:.6}footer{display:flex;justify-content:space-between;margin-top:100px;padding:50px;border-top:1px solid #333}a{color:#fff;font-size:15px;opacity:.6;transition:.2s ease}a:hover{opacity:1}.close-small{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z'%3E%3C/path%3E%3C/svg%3E");width:36px;height:36px;background-size:36px;position:fixed;right:10px;top:20px}body.dark{background:#202124;color:#fff}body.dark #icons svg{border-color:#888}body.dark #icons svg:hover{background:#313235}body.dark .h1 svg{filter:invert(0)}@media (max-width:685px){.head.active input{width:200px}}@media (max-width:600px){.row{margin:50px 0}.left{position:fixed;z-index:11111111;background:#202124;bottom:0;left:10px;width:calc(100% - 20px);height:calc(100vh - 70px);overflow:auto;display:none}.left .current,.left .filter{width:calc(100% - 15px);padding:3px}.head.active input{display:none}.right{width:100%;padding-left:0}.head.active .h1{left:10px}footer{display:block;text-align:center}footer a{display:block;margin:5px 0}.head input{right:initial;left:20px;top:70px;width:calc(100% - 40px)}#preloader{top:30%}}</style> <style id="icons-color"></style> <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAeklEQVQ4Ee1TQQ7AIAjj7pf8O09zabQBmRrirjsQDS2FWJRSShORqxi1d8WuaRdQ1cZw4DQZcZyOYwJI1lqPAc5WAMVOeXkHZynA7hmBwLFHzE7wC7ycsj3IPuLSRiYhcgo4QO5wwyYAEMBpmYgHju1B8Hcq3mJfv/MDdAZC2B32vXEAAAAASUVORK5CYII=" type="image/x-icon"> <meta name="keywords" content="icons, material icons, icon, design, svg, png, svg icon, materialdesignicons, danrotaru icons, danrotaru materialicons, danrotaru, danrotaru svg, Material design icons DanRotaru, material icons DanRotaru"> <meta name="description" content="Material design icons - fastest way to get svg icons, just icons, nothing else!"> <meta property="og:url" content="https://danrotaru.github.io/icons/"> <meta property="og:title" content="Material Icons"> <meta property="og:description" content="Material design icons - fastest way to get svg icons, just icons, nothing else!"></head><body class="dark"> <div class="head"> <div class="git" tooltip="View on Github" flow="left"></div> <div class="h1"> <svg style="width:24px;height:24px;"> <path fill="#FFF" d="M2,2H8V4H16V2H22V8H20V16H22V22H16V20H8V22H2V16H4V8H2V2M16,8V6H8V8H6V16H8V18H16V16H18V8H16M4,4V6H6V4H4M18,4V6H20V4H18M4,18V20H6V18H4M18,18V20H20V18H18Z"> </path> </svg> Material Design Icons </div> <input type="text" class="search" placeholder="Search icons.." autocomplete="off"> </div> <div class="logs1"></div> <div class="row"> <div class="left"> <div class="close-small"></div> <div class="filter"> <div class="search-title">Filter</div> <div class="seperator"> <span>Search by key words</span> </div> <input type="text" class="search" placeholder="Search icons.." autocomplete="off"> <div class="op">You can search multiple icons by keywords using "/". Eg. drink/food/user</div> <div class="seperator"> <span>Or Filter by Tags</span> </div> <select id="tags"> <option value="">All Tags</option> <option value="Account / User">Account / User</option> <option value="Agriculture">Agriculture</option> <option value="Alert / Error">Alert / Error</option> <option value="Alpha / Numeric">Alpha / Numeric</option> <option value="Animal">Animal</option> <option value="Arrange">Arrange</option> <option value="Arrow">Arrow</option> <option value="Audio">Audio</option> <option value="Automotive">Automotive</option> <option value="Banking">Banking</option> <option value="Battery">Battery</option> <option value="Brand / Logo">Brand / Logo</option> <option value="Cellphone / Phone">Cellphone / Phone</option> <option value="Clothing">Clothing</option> <option value="Cloud">Cloud</option> <option value="Color">Color</option> <option value="Currency">Currency</option> <option value="Database">Database</option> <option value="Date / Time">Date / Time</option> <option value="Developer / Languages">Developer / Languages</option> <option value="Device / Tech">Device / Tech</option> <option value="Drawing / Art">Drawing / Art</option> <option value="Edit / Modify">Edit / Modify</option> <option value="Emoji">Emoji</option> <option value="Files / Folders">Files / Folders</option> <option value="Food / Drink">Food / Drink</option> <option value="Form">Form</option> <option value="Gaming / RPG">Gaming / RPG</option> <option value="Geographic Information System">Geographic Information System</option> <option value="Hardware / Tools">Hardware / Tools</option> <option value="Health / Beauty">Health / Beauty</option> <option value="Holiday">Holiday</option> <option value="Home Automation">Home Automation</option> <option value="Lock">Lock</option> <option value="Math">Math</option> <option value="Medical / Hospital">Medical / Hospital</option> <option value="Music">Music</option> <option value="Nature">Nature</option> <option value="Navigation">Navigation</option> <option value="Notification">Notification</option> <option value="People / Family">People / Family</option> <option value="Photography">Photography</option> <option value="Places">Places</option> <option value="Printer">Printer</option> <option value="Religion">Religion</option> <option value="Science">Science</option> <option value="Settings">Settings</option> <option value="Shape">Shape</option> <option value="Shopping">Shopping</option> <option value="Social Media">Social Media</option> <option value="Sport">Sport</option> <option value="Text / Content / Format">Text / Content / Format</option> <option value="Tooltip">Tooltip</option> <option value="Transportation / Flying">Transportation + Flying</option> <option value="Transportation / Other">Transportation + Other</option> <option value="Transportation / Road">Transportation + Road</option> <option value="Transportation / Water">Transportation + Water</option> <option value="Vector">Vector</option> <option value="Video / Movie">Video / Movie</option> <option value="View">View</option> <option value="Weather">Weather</option> </select> <div class="seperator"> <span>Icons color</span> </div> <div class="color"> <input type="color" id="color" value="#ffffff"> <input type="text" value="#ffffff" placeholder="Color"> </div> </div> <div class="current"> <div class="seperator"> <span>Selected icon</span> </div> <div class="search-title" id="icon"></div> <div class="download"> <select id="download-sel"> <option value="svg">svg</option> <option value="24">png 16x16</option> <option value="24">png 24x24</option> <option value="36">png 36x36</option> <option value="48">png 48x48</option> <option value="128">png 128x128</option> <option value="256">png 256x256</option> <option value="512">png 512x512</option> </select> <div>Download</div> </div> <div class="op">Contributor: <span id="contribuitor"></span></div> <div data-id="svg-tab"> <div class="seperator"> <span>Get for HTML</span> </div> <div class="input" data-id="svg-icon"></div> <div class="op">SVG img tag</div> <div class="input" data-id="svgimg-icon"></div> <div class="op">SVG path</div> <div class="input" data-id="path-icon"></div> </div> <div data-id="css-tab"> <div class="seperator"> <span>Get for CSS</span> </div> <div class="input" data-id="cssbg-icon"></div> <div class="op">CSS url</div> <div class="input" data-id="cssurl-icon"></div> <div class="op">CSS dataimg</div> <div class="input" data-id="dataimg-icon"></div> <div class="op">CSS encoded</div> <div class="input" data-id="cssencoded-icon"></div> <br><br> </div> </div> </div> <div class="right"> <div id="icons"> <div id="preloader"></div> </div> </div> </div> <footer> <a href="https://materialdesignicons.com/" target="_blank">https://materialdesignicons.com/</a> <a>Icons: <span id="nicons">0</span></a> <a href="https://t.me/danrotaru" target="_blank">Created by DanRotaru</a> </footer><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script> var LocalLoad = { src: 'icons.json', load: false }; if (location.search.split('live=')[1] == "1") LocalLoad.load = true;</script><script src="app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Icons</title>
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAeklEQVQ4Ee1TQQ7AIAjj7pf8O09zabQBmRrirjsQDS2FWJRSShORqxi1d8WuaRdQ1cZw4DQZcZyOYwJI1lqPAc5WAMVOeXkHZynA7hmBwLFHzE7wC7ycsj3IPuLSRiYhcgo4QO5wwyYAEMBpmYgHju1B8Hcq3mJfv/MDdAZC2B32vXEAAAAASUVORK5CYII=" type="image/x-icon"> 
+    <meta name="keywords" content="icons, material icons, icon, design, svg, png, svg icon, materialdesignicons, danrotaru icons, danrotaru materialicons, danrotaru, danrotaru svg, Material design icons DanRotaru, material icons DanRotaru"> 
+    <meta name="description" content="Material design icons - fastest way to get svg icons, just icons, nothing else!"> 
+    <meta property="og:url" content="https://danrotaru.github.io/icons/"> 
+    <meta property="og:title" content="Material Icons"> 
+    <meta property="og:description" content="Material design icons - fastest way to get svg icons, just icons, nothing else!">
+    <link rel="stylesheet" href="app.css">
+    <style id="icons-color"></style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <svg viewBox="0 0 24 24">
+                <path fill="#fff" d="M2,2H8V4H16V2H22V8H20V16H22V22H16V20H8V22H2V16H4V8H2V2M16,8V6H8V8H6V16H8V18H16V16H18V8H16M4,4V6H6V4H4M18,4V6H20V4H18M4,18V20H6V18H4M18,18V20H20V18H18Z"></path>
+            </svg>
+            Material Design Icons
+        </div>
+        <div class="description">
+            Open-source iconography for designers and developers. Viewer by <a href="https://bit.ly/3xDaz3u" target="_blank" rel="noopener">DanRotaru</a>
+        </div>
+        <a class="star" href="https://github.com/DanRotaru/icons" target="_blank" rel="noopener">Star me on Github</a>
+    </header>
+    <main>
+        <div class="main-header">
+            <div class="search">
+                <label for="search">Search by keyword</label>
+                <input type="text" id="search" placeholder='Search (Press "/" to focus)' autocomplete="off">
+                <span>You can also search multiple icons by keywords using "/". Eg. drink/food/user</span>
+            </div>
+            <div class="tags">
+                <label for="tags">Search by tags</label>
+                <select id="tags">
+                    <option value="">All Tags</option>
+                    <option value="Account / User">Account / User</option>
+                    <option value="Alert / Error">Alert / Error</option>
+                    <option value="Alpha / Numeric">Alpha / Numeric</option>
+                    <option value="Arrange">Arrange</option>
+                    <option value="Arrow">Arrow</option>
+                    <option value="Audio">Audio</option>
+                    <option value="Battery">Battery</option>
+                    <option value="Cellphone / Phone">Cellphone / Phone</option>
+                    <option value="Cloud">Cloud</option>
+                    <option value="Color">Color</option>
+                    <option value="Currency">Currency</option>
+                    <option value="Database">Database</option>
+                    <option value="Date / Time">Date / Time</option>
+                    <option value="Drawing / Art">Drawing / Art</option>
+                    <option value="Edit / Modify">Edit / Modify</option>
+                    <option value="Emoji">Emoji</option>
+                    <option value="Food / Drink">Food / Drink</option>
+                    <option value="Form">Form</option>
+                    <option value="Lock">Lock</option>
+                    <option value="Math">Math</option>
+                    <option value="Medical / Hospital">Medical / Hospital</option>
+                    <option value="Music">Music</option>
+                    <option value="Nature">Nature</option>
+                    <option value="Notification">Notification</option>
+                    <option value="People / Family">People / Family</option>
+                    <option value="Printer">Printer</option>
+                    <option value="Religion">Religion</option>
+                    <option value="Settings">Settings</option>
+                    <option value="Shape">Shape</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Text / Content / Format">Text / Content / Format</option>
+                    <option value="Tooltip">Tooltip</option>
+                    <option value="Vector">Vector</option>
+                    <option value="Video / Movie">Video / Movie</option>
+                    <option value="View">View</option>
+                    <option value="Weather">Weather</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="aside-bg h"></div>
+        <aside>
+            <div class="close"></div>
+            <div class="icon-title">
+                <div class="icon-title__name">vector-rectangle</div>
+                <div class="icon-title__contributor">Austin Andrews</div>
+            </div>
+            <div class="icon-preview">
+                <svg viewBox="0 0 24 24">
+                    <path fill="#fff" d="M2,2H8V4H16V2H22V8H20V16H22V22H16V20H8V22H2V16H4V8H2V2M16,8V6H8V8H6V16H8V18H16V16H18V8H16M4,4V6H6V4H4M18,4V6H20V4H18M4,18V20H6V18H4M18,18V20H20V18H18Z"></path>
+                </svg>
+            </div>
+            <div class="action action-color">
+                <input type="color" id="color" value="#ffffff">
+                <input type="text" id="color1" value="currentColor" placeholder="Color">
+                <div class="toCurrentColor h" title="To currentColor"></div>
+            </div>
+            <div class="actions">
+                <div class="action">
+                    <select id="copy-type">
+                        <option value="1" selected>SVG HTML tag</option>
+                        <option value="2">SVG img tag</option>
+                        <option value="3">SVG path tag</option>
+                        <option value="4">SVG path data</option>
+                        <option value="5">CSS background-image</option>
+                        <option value="6">CSS url</option>
+                        <option value="7">CSS data-img</option>
+                        <option value="8">CSS encoded</option>
+                    </select>
+                    <button class="copy">Copy</button>
+                </div>
+                <div class="action">
+                    <select id="icon-download">
+                        <option value="svg" selected>SVG</option>
+                        <option value="16">PNG 16x16</option>
+                        <option value="24">PNG 24x24</option>
+                        <option value="36">PNG 36x36</option>
+                        <option value="48">PNG 48x48</option>
+                        <option value="128">PNG 128x128</option>
+                        <option value="256">PNG 256x256</option>
+                        <option value="512">PNG 512x512</option>
+                    </select>
+                    <button class="download">Download</button>
+                </div>
+            </div>
+            <div class="by">
+                <span>Icons: <span id="nicons"></span></span>
+                Created by <a href="https://bit.ly/3xDaz3u" target="_blank" rel="noopener">DanRotaru</a> with ❤️
+            </div>
+        </aside>
+
+        <div id="icons">
+            <div id="preloader"></div>
+        </div>
+    </main>
+    <script async src="https://cdn.splitbee.io/sb.js"></script>
+    <script>
+        var localLoad = false;
+        if(location.search.split('live=')[1] == "1") localLoad = true;
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
