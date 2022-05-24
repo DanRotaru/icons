@@ -12,7 +12,8 @@ Fastest way to get svg icons, just icons, nothing else!
 3. Possibility to select icons by tags
 4. Possibility to change icon color
 5. Possibility to download icons (in svg or png (16, 24, 36, 48, 128, 256, 512px)
-6. Get SVG for
+6. Fastest way to get all icons, just add ?live=1 to url, it will get icons from icons.json instead using API
+7. Get SVG for
 - HTML (svg tag)
 - HTML (img tag with src attribute)
 - HTML (only path tag)
