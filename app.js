@@ -102,11 +102,12 @@ function req(url, cb, errcb){
 
 const CORS = 'https://api.allorigins.win/raw?url=';
 var copyTimeout;
+var iconsArr = [];
 
 function getIcons(res){
     let num = 0, data = '';
     res = JSON.parse(res);
-    console.log(res);
+    // console.log(res);
 
     for (const icon of res.icons) {
         let fill = "#6F6F6F";
@@ -122,6 +123,13 @@ function getIcons(res){
     $("#icons").html(data);
     $("#nicons").text(num);
     $("#search").attr("placeholder", `Search ${num} icons (Press "/" to focus)`);
+
+    document.querySelectorAll(`#icons div`).forEach(el => {
+        iconsArr.push({
+            alias: el.getAttribute("data-alias"),
+            el: el
+        });
+    });
     
     // add click event on all icons
     $("#icons div", 2).click((el) => {
@@ -246,7 +254,73 @@ function searchInput(val){
     }
 }
 
-$("#search").on("input", (el) => searchInput(el.value));
+function searchI(){
+    let val = $("#search").val().trim().toLowerCase();
+
+    if(val == ""){
+        $(`#icons div`, 2).removeClass("h");
+    }
+    else{
+        for(let icon of iconsArr){
+            icon.el.classList.toggle('h', !icon.alias.includes(val))
+        }
+
+        // if(val.search("/") !== -1){
+        //     let a = val.replace(/ /g, '').split("/");
+        //     let len = val.split("/").length - 1;
+        //     for(let i = 0; i <= len; i++){
+        //         for(let icon of iconsArr){
+        //             if(icon.alias.indexOf(a[i]) > -1){
+        //                 icon.el.classList.remove("h");
+        //             }
+        //         }
+        //     }
+        // }else{
+            
+        // }
+        
+    }
+
+    
+    
+    // console.log(iconsArr);
+    // IconsArray.icons.forEach(icon => {
+    //     let aliases = icon.aliases;
+    //     if(aliases.length){
+    //         for(let alias of aliases){
+    //             if(alias.search(val) > -1){
+    //                 console.log(icon);
+    //                 $(`#icons div[data-id="${icon.id}"]`, 2).removeClass("h");
+    //             }
+    //         }
+    //     }
+    //     else{
+    //        // нужно по name 
+    //     }
+    // })
+
+    // console.log(finded);
+        // $(`#icons div[data-id="${icon.id}"]`, 2).removeClass("h");
+        // icon.element.classList.toggle('visible', icon.name.includes(query))
+
+    
+}
+
+// function debounce(func, timeout = 300){
+//     let timer;
+//     return (...args) => {
+//       clearTimeout(timer);
+//       timer = setTimeout(() => { func.apply(this, args); }, timeout);
+//     };
+//   }
+//   function saveInput(){
+//       let val = $("#search").val();
+//     // searchInput(val);
+//     searchI();
+//   }
+//   const processChange = debounce(() => saveInput());
+
+$("#search").on("input", (el) => searchI());
 
 $("#tags").on("change", (el) => {
     let val = el.value;
